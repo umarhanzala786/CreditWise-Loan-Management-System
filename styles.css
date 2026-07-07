@@ -1,0 +1,162 @@
+
+   /* CreditWise Premium Theme */
+
+
+.stApp{
+    background: linear-gradient(135deg,#0f172a,#1e293b,#0f172a);
+}
+
+/* Sidebar */
+
+section[data-testid="stSidebar"]{
+    background:#111827;
+}
+
+/* Metric Cards */
+
+div[data-testid="metric-container"]{
+
+    background:#1e293b;
+
+    border-radius:18px;
+
+    padding:18px;
+
+    border:1px solid #334155;
+
+    box-shadow:0px 4px 15px rgba(0,0,0,.25);
+}
+
+/* Buttons */
+
+.stButton>button{
+
+    width:100%;
+
+    border-radius:12px;
+
+    height:52px;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    background:#16a34a;
+
+    color:white;
+
+    border:none;
+}
+
+.stButton>button:hover{
+
+    background:#15803d;
+}
+
+/* Inputs */
+
+.stTextInput input,
+.stNumberInput input{
+
+    border-radius:10px;
+}
+
+/* Selectbox */
+
+.stSelectbox{
+
+    border-radius:10px;
+}
+
+/* Tables */
+
+[data-testid="stDataFrame"]{
+
+    border-radius:15px;
+}
+
+/* Progress */
+
+.stProgress{
+
+    border-radius:10px;
+}
+
+/*  Hover Effects  */
+
+/* Metric Cards */
+
+div[data-testid="metric-container"]{
+    transition: all .35s ease;
+    cursor: pointer;
+}
+
+div[data-testid="metric-container"]:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,255,120,.30);
+    border: 1px solid #00E676;
+}
+
+/* Buttons */
+
+.stButton > button{
+    transition: all .35s ease;
+}
+
+.stButton > button:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,255,120,.30);
+}
+
+/* DataFrame */
+
+[data-testid="stDataFrame"]{
+    transition: .35s;
+}
+
+[data-testid="stDataFrame"]:hover{
+    box-shadow: 0 10px 20px rgba(0,255,120,.25);
+}
+
+/* Expander */
+
+details{
+    transition: .35s;
+}
+
+details:hover{
+    box-shadow: 0 10px 20px rgba(0,255,120,.25);
+    border-radius: 10px;
+}
+
+/* Success / Info / Warning Boxes */
+
+div[data-baseweb="notification"]{
+    transition: all .35s ease;
+}
+
+div[data-baseweb="notification"]:hover{
+    transform: translateY(-5px);
+}
+
+/* Home Page Cards */
+
+.card{
+    transition: all .35s ease;
+    cursor: pointer;
+    border:1px solid #334155;
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    background:#334155;
+
+    border:1px solid #4ade80;
+
+    box-shadow:
+    0 0 12px rgba(74,222,128,.35),
+    0 12px 30px rgba(0,0,0,.35);
+
+}
