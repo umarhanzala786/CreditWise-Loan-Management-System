@@ -2,9 +2,6 @@ import streamlit as st
 import pandas as pd
 import math
 
-# ----------------------------------------
-# Page Config
-# ----------------------------------------
 
 st.set_page_config(
     page_title="Loan Tools",
@@ -16,15 +13,8 @@ st.title("🛠 Loan Tools")
 st.write("Search Applicant Details and Calculate Loan EMI")
 st.divider()
 
-# ----------------------------------------
-# Load Dataset
-# ----------------------------------------
 
 df = pd.read_csv("loan_approval_data.csv")
-
-# ========================================
-# SECTION 1 : SEARCH APPLICANT
-# ========================================
 
 st.subheader("🔍 Search Applicant")
 
@@ -34,7 +24,7 @@ search_id = st.number_input(
     step=1
 )
 
-if st.button("🔎 Search Applicant"):
+if st.button("Search Applicant"):
 
     result = df[df["Applicant_ID"] == search_id]
 
@@ -91,10 +81,6 @@ if st.button("🔎 Search Applicant"):
         st.error("❌ Applicant Not Found")
 
 st.divider()
-
-# ========================================
-# SECTION 2 : EMI CALCULATOR
-# ========================================
 
 st.subheader("💰 EMI Calculator")
 
@@ -170,10 +156,6 @@ if st.button("💳 Calculate EMI"):
     st.progress(100)
 
 st.divider()
-
-# ========================================
-# LOAN TIPS
-# ========================================
 
 st.subheader("💡 Loan Tips")
 
