@@ -27,7 +27,7 @@ st.divider()
 # Sidebar
 
 
-st.sidebar.header("🎯 Dashboard Filters")
+st.sidebar.header(" Dashboard Filters")
 
 property_filter = st.sidebar.multiselect(
     "Property Area",
@@ -153,7 +153,7 @@ st.dataframe(
     filtered_df[show_cols].tail(10),
     use_container_width=True
 )
-st.subheader("🎓 Loan Approval by Education")
+st.subheader("Loan Approval by Education")
 
 education_map = {
     0: "High School",
@@ -186,7 +186,7 @@ chart_df["Loan_Approved"] = chart_df["Loan_Approved"].map({
 
 
 
-st.subheader("💼 Loan Approval by Employment")
+st.subheader("Loan Approval by Employment")
 
 emp_df = filtered_df.copy()
 
@@ -212,7 +212,7 @@ fig.update_layout(
 st.plotly_chart(fig, use_container_width=True)
 
 
-st.subheader("🏡 Loan Approval by Property Area")
+st.subheader("Loan Approval by Property Area")
 
 property_df = filtered_df.copy()
 
@@ -237,7 +237,7 @@ fig.update_layout(
 
 st.plotly_chart(fig, use_container_width=True)
 
-st.subheader("💰 Savings Distribution")
+st.subheader("Savings Distribution")
 
 fig = px.histogram(
     filtered_df,
@@ -254,7 +254,7 @@ fig.update_layout(
 
 st.plotly_chart(fig, use_container_width=True)
 
-st.subheader("🔥 Correlation Heatmap")
+st.subheader("Correlation Heatmap")
 
 
 
@@ -272,7 +272,7 @@ fig = ff.create_annotated_heatmap(
 
 fig.update_layout(
     template="plotly_dark",
-    title="🔥 Correlation Heatmap",
+    title="Correlation Heatmap",
     height=700,
     margin=dict(l=120, r=80, t=80, b=120),
 
@@ -297,7 +297,7 @@ fig.update_yaxes(
 
 st.divider()
 
-st.subheader("🧠 Dashboard Insights")
+st.subheader("Dashboard Insights")
 
 approval_rate = (
     (filtered_df["Loan_Approved"] == "Yes").mean() * 100
@@ -324,11 +324,11 @@ with col1:
 
 with col2:
 
-    st.info(f"💰 Average Applicant Income : ₹ {avg_income:,.0f}")
+    st.info(f"Average Applicant Income : ₹ {avg_income:,.0f}")
 
-    st.info(f"🏦 Average Loan Amount : ₹ {avg_loan:,.0f}")
+    st.info(f"Average Loan Amount : ₹ {avg_loan:,.0f}")
 
-st.subheader("📌 Key Observations")
+st.subheader("Key Observations")
 
 st.success(
     "✔ Applicants with higher Credit Score have better approval chances."
