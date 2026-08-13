@@ -130,7 +130,7 @@ st.divider()
 # Insights
 
 
-st.subheader("🧠 Model Insights")
+st.subheader("Model Insights")
 
 top5 = importance_df.head(5)
 
