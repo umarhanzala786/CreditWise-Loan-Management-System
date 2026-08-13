@@ -31,8 +31,6 @@ with st.sidebar:
 
     st.info("Version 1.0")
 
-    st.caption("Developed by Umar Hanzala")
-
 st.markdown("""
 <style>
 
@@ -108,7 +106,7 @@ with col4:
 
 st.divider()
 
-st.header("📌 Features")
+st.header(" Features")
 
 c1,c2=st.columns(2)
 
@@ -124,7 +122,7 @@ with c2:
 
 st.divider()
 
-st.header("🚀 Quick Navigation")
+st.header(" Quick Navigation")
 
 c1, c2, c3 = st.columns(3)
 
