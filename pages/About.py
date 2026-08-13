@@ -13,23 +13,10 @@ It predicts whether a loan application should be approved or rejected based on a
 
 st.divider()
 
-col1, col2 = st.columns(2)
+col1 = st.columns(1)
+
 
 with col1:
-
-    st.subheader("👨‍💻 Developer")
-
-    st.info("""
-**Name:** Umar Hanzala
-
-**Course:** B.Tech Computer Science
-
-**University:** MANUU
-
-**Project Type:** Minor Project
-""")
-
-with col2:
 
     st.subheader("🤖 Machine Learning Model")
 
@@ -133,5 +120,5 @@ st.success("✔ Prediction History")
 st.divider()
 
 st.caption(
-    "© 2026 CreditWise Loan Management System | Developed by Umar Hanzala"
+    "© 2026 CreditWise Loan Management System."
 )
